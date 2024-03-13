@@ -6,16 +6,17 @@ namespace SomerenService
 {
     public class StudentService
     {
-        private StudentDao studentDAO;
+        private StudentDao studentdb;
 
         public StudentService()
         {
-            studentDAO = new StudentDao();
+            studentdb = new StudentDao();
         }
 
         public List<Student> GetStudents()
         {
-            return studentDAO.GetAllStudents();
+            List<Student> students = studentdb.GetAllStudents();
+            return students;
         }
     }
 }
