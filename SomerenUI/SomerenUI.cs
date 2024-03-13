@@ -47,7 +47,7 @@ namespace SomerenUI
         private void DisplayStudents(List<Student> students)
         {
             listViewStudents.Items.Clear();
-
+            
             foreach (Student student in students)
             {
                 ListViewItem item = new();
